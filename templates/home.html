@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>RH Smyki-rehabilitacja dzieci</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href={% static "css/home.css" %}>
+</head>
+
+<body>
+  <nav>
+    <ul>
+        <li><img class="logo" src={% static "img/smyki.png" %}></li>
+        <li><a href={% url 'home' %}>Home</a></li>
+        <li><a href={% url 'about-us' %}>O nas</a></li>
+        <li><a href={% url 'join-us' %}>Współpraca</a></li>
+        <li><a href={% url 'price-list' %}>Cennik</a></li>
+        <li><a class="other" href={% url 'contact' %}>umów wizytę</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Rehabilitacja dzieci z dojazdem do domu</h1>
+  </header>
+  <section class="features clearfix">
+    <h1>GWARANTUJEMY</h1>
+    <div class="feature">
+      <img src={% static "img/group.png" %} >
+      <h2>Wykwalifikowany zespół fizjoterapeutów</h2>
+      <p class="description"> Posiadamy wszelkie kwalifikacje niezbędne do tego, żeby fachowo i skutecznie
+        przeprowadzać zabiegi z zakresu fizjoterapii dzieci.
+        Gwarantujemy pełne zaangażowanie i zrozumienie potrzeb naszych pacjentów.
+      </p>
+    </div>
+
+
+    <div class="feature">
+      <img src={% static "img/clock (5).png" %}>
+      <h2>Krótki czas oczekiwania na wizytę</h2>
+      <p class="description"> Dokonujemy wszelkich starań aby czas oczekiwania na badanie
+        lub konsultację był jak najkrótszy.
+        Zapraszamy do zarezerwowania wizyty.
+      </p>
+    </div>
+
+    <div class="feature">
+      <img src={% static "img/car (3).png" %}>
+      <h2>Bezpłatny dojazd</h2>
+      <p class="description">
+
+        Dlaczego masz jechać do fizjoterapeuty, jeżeli on może przyjechać do Ciebie?
+        Na terenie Warszawy i okolic zapewniamy darmowy dojazd do pacjenta.
+      </p>
+    </div>
+  </section>
+  <section class="slogan">
+    <div class="bg">
+      <h1></h1>
+      <p class="text">"Kiedy śmieje się dziecko, śmieje się cały świat"</p>
+      <p class="author">Janusz Korczak</p>
+    </div>
+  </section>
+  <footer>
+    <img src={% static "img/smyki.png" %}>
+    <p> &copy; 2018 Rhsmyki </p>
+  </footer>
+
+
+</body>
+
+</html>

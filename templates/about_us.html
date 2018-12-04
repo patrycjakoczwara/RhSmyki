@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>O nas</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href={% static "css/about_us.css" %}>
+
+</head>
+
+
+<body>
+    <nav>
+        <ul class="sterowanie">
+        <li><img class="logo" src={% static "img/smyki.png" %}></li>
+        <li><a href={% url 'home' %}>Home</a></li>
+        <li><a href={% url 'about-us' %}>O nas</a></li>
+        <li><a href={% url 'join-us' %}>Współpraca</a></li>
+        <li><a href={% url 'price-list' %}>Cennik</a></li>
+        <li><a class="other" href={% url 'contact' %}>umów wizytę</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src={% static "img/team.jpg" %} class="obrazek">
+        <img src={% static "img/happy.jpg" %} class="obrazek">
+        <img src={% static "img/thumb.jpg" %} class="obrazek">
+
+
+
+        <div>
+            <h1>Kim jesteśmy?</h1>
+            <ul>
+                <li>Zespołem fizjoterapeutów z kwalifikacjami i doświadczeniem</li>
+            </ul>
+
+        </div>
+        <div>
+            <h1>Jak działamy?</h1>
+            <ul>
+                <li>profesjonalnie</li>
+                <li>zgodnie z planem</li>
+                <li>sumiennie</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Co nas wyróżnia?
+                <ul>
+                    <li>pasja</li>
+                    <li>zaangażowanie</li>
+                    <li>pomysłowość</li>
+                    <li>właściwe podejście do pracy z dziećmi</li>
+                </ul>
+            </h1>
+        </div>
+    </header>
+    <footer>
+       <img src={% static "img/smyki.png" %}>
+        <p>&copy; 2018 RHsmyki </p>
+
+    </footer>
+
+
+
+</body>
+
+</html>

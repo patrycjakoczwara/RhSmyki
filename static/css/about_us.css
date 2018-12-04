@@ -1,0 +1,229 @@
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Nawigacja*/
+
+ul.sterowanie {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    flex-basis: 25%;
+    /* flex-shrink: 1; */
+    /* flex-grow: 0; */
+}
+
+a {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+}
+
+a.other {
+    display: block;
+    background-color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'open sans', sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    transition: .2s;
+
+}
+
+
+.logo {
+    width: 16vw;
+    padding: 20px;
+}
+
+a:hover {
+    border-bottom: 2px solid #555;
+    color: black;
+}
+
+a.other:hover {
+    background-color: royalblue;
+    color: #eee;
+    border-color: royalblue;
+}
+
+
+@media (min-width: 1025px) {
+    ul.sterowanie {
+        flex-direction: row;
+    }
+
+    a {
+        margin: 15px;
+        /* padding: 50px 0; */
+    }
+
+}
+
+
+
+
+header {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 19px;
+}
+
+
+img.obrazek {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 110%;
+    max-height: 110%;
+    opacity: 0;
+    animation: slider 15s infinite linear;
+}
+
+img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+div {
+    position: absolute;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: 'open sans', sans-serif;
+    color: white;
+    padding: 20px 60px;
+    animation: txt 15s linear infinite both;
+    opacity: 0;
+
+}
+
+div:nth-of-type(1) {
+    top: 30%;
+    right: 20%;
+}
+
+div:nth-of-type(2) {
+    bottom: 25%;
+    left: 20%;
+    animation-delay: 5s;
+}
+
+div:nth-of-type(3) {
+    top: 10%;
+    left: 35%;
+    animation-delay: 10s;
+}
+
+@keyframes txt {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    23.33% {
+        opacity: 1;
+    }
+
+    28.33% {
+        opacity: 0;
+    }
+
+    33.33% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes slider {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1
+    }
+
+    33.33% {
+        opacity: 1
+    }
+
+    38.33% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+
+}
+
+
+/* Stopka*/
+
+
+footer {
+
+    background-color: #555;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+footer p {
+
+    text-align: center;
+
+}
+
+
+footer img {
+
+    display: inline-block;
+    width: 16vw;
+}

@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>współpraca</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href={% static "css/join_us.css" %}>
+    <!-- Import fonta Oswald -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=latin-ext" rel="stylesheet"> -->
+</head>
+
+<body>
+    <nav>
+        <ul class="sterowanie">
+        <li><img class="logo" src={% static "img/smyki.png" %}></li>
+        <li><a href={% url 'home' %}>Home</a></li>
+        <li><a href={% url 'about-us' %}>O nas</a></li>
+        <li><a href={% url 'join-us' %}>Współpraca</a></li>
+        <li><a href={% url 'price-list' %}>Cennik</a></li>
+        <li><a class="other" href={% url 'contact' %}>umów wizytę</a></li>
+        </ul>
+    </nav>
+    <div></div>
+    <header>
+
+        <h2>Współpraca</h2>
+        <p>Dołącz do zespołu Rh Smyki.</p>
+        <p>Poszukujemy fizjoterapeutów z Warszawy i okolic.</p>
+        <p>Zainteresowane osoby prosimy o wysłanie CV na adres rhsmyki@gmail.com</p>
+    </header>
+    <section class="about">
+        <h1>Dla nas liczy się:</h1>
+        <article class="art1 clearfix">
+            <h2>Zaangażowanie</h2>
+            <img src={% static "img/heart.png" %}>
+            <p>Jesteśmy młodym, pełnym zaangażowania i poświęcenia zespołem. Naszą motywacją jest chęć niesienia pomocy
+                naszym najmłodszym pacjentom.</p>
+
+        </article>
+        <article class="art2 clearfix">
+            <h2>Wiedza i profesjonalizm</h2>
+            <img src={% static "img/briefcase.png" %}>
+
+            <p>Wszyscy członkowie naszego teamu ukończyli studia wyższe na kierunku fizjoterapii,
+                które pozwoliły na zdobycie odpowiedniej wiedzy i praktyki koniecznej do tej pracy. </p>
+
+        </article>
+        <article class="art3 clearfix">
+            <h2>Perfekcja</h2>
+            <img src={% static "img/diploma.png" %}>
+
+
+
+            <p>Sumienność i dyscyplina oraz umiejętność motywowania pacjentów do ćwiczeń pomagają nam osiągnąć sukces w
+                naszym zawodzie.</p>
+
+        </article>
+        <article class="art4 clearfix">
+            <h2>Ciągły wzrost</h2>
+            <img src={% static "img/plant.png" %}>
+
+
+
+            <p>Jesteśmy dziś profesjonalnym zespołem fizjoterapeutów, który jednak ciągle się rozwija, ciągle uczy i
+                ciągle stara sie
+                dawać
+                z
+                siebie jeszcze więcej. </p>
+
+        </article>
+    </section>
+    <section class="quotes">
+        <h1>Dlaczego MY</h1>
+        <article class="op1">
+            <img src={% static "img/connect-316638_1280.jpg" %}>
+            <p>
+                <span>Nasi pracownicy mogą liczyć na bardzo dobre warunki pracy, atmosferę młodego, pozytywnie
+                    nastawionego zespołu, oraz uczciwy system zarobków</span> - to klucz
+                do udanej współpracy.
+
+            </p>
+
+
+        </article>
+
+        <article class="op2">
+            <img src={% static "img/document-3268750_1920.jpg" %}>
+            <p>
+                <span>Naszą największą wartością są ludzie</span> - obok doświadczonych fizjoterapeutów inwestujemy
+                również w tych młodych, którym pomagamy stawiać pierwsze kroki w zawodzie.
+            </p>
+
+        </article>
+    </section>
+    <footer>
+        <img src={% static "img/smyki.png" %}>
+        <p> &copy; 2018 Rhsmyki </p>
+    </footer>
+
+    <script src={% static "js/jquery-3.2.1.min.js" %} ></script>
+    <script src={% static "js/about_us.js" %} ></script>
+
+</body>
+
+</html>

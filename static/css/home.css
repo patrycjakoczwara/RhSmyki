@@ -1,0 +1,241 @@
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Nawigacja*/
+
+
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  flex-basis: 25%;
+  /* flex-shrink: 1; */
+  /* flex-grow: 0; */
+}
+
+a {
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+}
+
+a.other {
+  display: block;
+  background-color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: 'open sans', sans-serif;
+  text-decoration: none;
+  padding: 20px;
+  border: 2px solid black;
+  letter-spacing: 1px;
+  transition: .2s;
+
+}
+
+
+.logo {
+  width: 16vw;
+  padding: 20px;
+}
+
+a:hover {
+  border-bottom: 2px solid #555;
+  color: black;
+}
+
+a.other:hover {
+  background-color: royalblue;
+  color: #eee;
+  border-color: royalblue;
+}
+
+
+@media (min-width: 1025px) {
+  ul {
+    flex-direction: row;
+  }
+
+  a {
+    margin: 15px;
+    /* padding: 50px 0; */
+  }
+
+}
+
+
+
+/*Header */
+
+header {
+  height: 100vh;
+  background-image: url('../img/barefoot-3569057_1920.jpg');
+  background-size: cover;
+  /* background-attachment: fixed;
+  background-position: center; */
+  background-color: rgba(0, 63, 114, 0.3);
+}
+
+header h1 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  line-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.features {
+  max-width: 1600px;
+  margin: 50px auto 0;
+  padding: 5%;
+  text-align: center;
+}
+
+.features h1 {
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+
+}
+
+.features h2 {
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+
+.features p {
+  font-family: 'Saira', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.features img {
+  width: 30%;
+  margin: 5px 0;
+  max-width: 375px;
+
+}
+
+@media (min-width:1024px) {
+
+  .features {
+    margin-top: 50px;
+    padding: 5% 2%;
+    text-align: center;
+  }
+
+  .feature {
+    float: left;
+    width: 33%;
+    padding: 30px;
+  }
+
+  .features h1 {
+    font-size: 34px;
+  }
+
+  .features h2 {
+    font-size: 22px;
+  }
+
+  .features p {
+    font-size: 16px;
+  }
+}
+
+/* sekcja motto */
+
+.slogan {
+  text-align: center;
+  background-image: url('../img/kid.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-attachment: fixed;
+
+
+
+
+}
+
+.slogan h1 {
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 55px;
+}
+
+.slogan p {
+  font-family: 'Saira', sans-serif;
+  font-size: 30px;
+  width: 100%;
+
+}
+
+.slogan p.author {
+  margin-top: 40px;
+  font-size: 26px;
+}
+
+.slogan .bg {
+  padding: 180px 10px;
+  background-color: rgba(0, 63, 114, 0.5);
+
+}
+
+
+
+/* Stopka*/
+
+footer {
+  background-color: #555;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+
+}
+
+footer p {
+  text-align: center;
+
+}
+
+
+footer img {
+
+  display: inline-block;
+  width: 16vw;
+}

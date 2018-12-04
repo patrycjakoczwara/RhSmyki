@@ -1,0 +1,315 @@
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Nawigacja*/
+
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    flex-basis: 25%;
+    /* flex-shrink: 1; */
+    /* flex-grow: 0; */
+}
+
+a {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+}
+
+a.other {
+    display: block;
+    background-color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'open sans', sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    transition: .2s;
+
+}
+
+
+.logo {
+    width: 16vw;
+    padding: 20px;
+}
+
+a:hover {
+    border-bottom: 2px solid #555;
+    color: black;
+}
+
+a.other:hover {
+    background-color: royalblue;
+    color: #eee;
+    border-color: royalblue;
+}
+
+
+@media (min-width: 1025px) {
+    ul {
+        flex-direction: row;
+    }
+
+    a {
+        margin: 15px;
+        /* padding: 50px 0; */
+    }
+
+}
+
+/*Header */
+
+header {
+    height: 100vh;
+    background-image: url('../img/sunglasses.jpg');
+    background-size: cover;
+
+}
+
+header h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: left;
+    line-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 
+section {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    background-image: url(walking.png);
+    width: 256px;
+    height: 314px;
+    animation: walk 1s infinite steps(8), move 4s infinite linear alternate, turn 8s infinite linear;
+
+}
+
+@keyframes walk {
+
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -2048px 0;
+    }
+}
+
+@keyframes move {
+    100% {
+        left: calc(100% - 256px);
+    }
+}
+
+@keyframes turn {
+    0% {
+        transform: rotateY(0)
+    }
+
+    50% {
+        transform: rotateY(0)
+    }
+
+    50.001% {
+        transform: rotateY(180deg)
+    }
+
+    100% {
+        transform: rotateY(180deg)
+    }
+}
+
+/* sekcja kontakt */
+
+.contact {
+    background-color: #999;
+    padding: 30px 20px;
+
+
+}
+
+.contact h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+
+}
+
+.contact .wrap {
+    padding-top: 20px;
+    max-width: 1024;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: 'saira', sans-serif;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.contact input {
+    height: 36px;
+}
+
+.contact textarea {
+    height: 120px;
+
+}
+
+
+.contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: white;
+    color: #555;
+    border: 3px solid #555;
+}
+
+.contact .socials {
+    padding-top: 20px;
+    font-size: 0;
+}
+
+.contact .social {
+    padding: 10px 0;
+    color: white;
+    font-family: 'saira condensed', sans-serif;
+}
+
+.contact .social img {
+    float: left;
+}
+
+.contact .social span {
+    line-height: 72px;
+    padding-left: 20px;
+    float: left;
+    font-size: 15px;
+}
+
+
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .contact h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+        padding: 0 20px
+    }
+
+    .contact .social {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact input,
+    .contact button,
+    .contact textarea {
+        margin-bottom: 35px;
+
+    }
+
+    .contact input {
+
+        height: 46px;
+        font-size: 24px;
+
+    }
+
+    .contact textarea {
+        height: 180px;
+        font-size: 24px;
+    }
+
+    .contact button {
+        font-size: 20px;
+        line-height: 50px;
+        transition: .3s;
+        cursor: pointer;
+
+    }
+
+    .contact button:hover {
+        color: black;
+        background-color: #fff;
+    }
+}
+
+
+/* Stopka*/
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+
+
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+footer img {
+
+    display: inline-block;
+    width: 16vw;
+}

@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>cennik</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href={% static "css/price_list.css" %}>
+</head>
+
+<body>
+    <nav>
+        <ul class="sterowanie">
+        <li><img class="logo" src={% static "img/smyki.png" %}></li>
+        <li><a href={% url 'home' %}>Home</a></li>
+        <li><a href={% url 'about-us' %}>O nas</a></li>
+        <li><a href={% url 'join-us' %}>Współpraca</a></li>
+        <li><a href={% url 'price-list' %}>Cennik</a></li>
+        <li><a class="other" href={% url 'contact' %}>umów wizytę</a></li>
+        </ul>
+    </nav>
+    <header></header>
+
+    <h1>CENNIK REHABILITACJI</h1>
+    <section>
+        <div class="col">
+            <h2>SPOTKANIE DIAGNOSTYCZNE </h2>
+            <p>czas spotkania:50 minut</p>
+            <p>dojazd na terenie Warszawy i okolic-w cenie</p>
+            <p class="price"><span>90 PLN </span></p>
+        </div>
+        <div class="col">
+            <h2>REHABILITACJA DZIECI</h2>
+            <p>czas spotkania:50 minut</p>
+            <p>dojazd na terenie Warszawy i okolic-w cenie</p>
+            <p class="price"><span>100 PLN</span></p>
+        </div>
+        <div class="col">
+            <h2>REHABILITACJA NIEMOWLĄT</h2>
+            <p>czas spotkania:50 minut</p>
+            <p>dojazd na terenie Warszawy i okolic-w cenie</p>
+            <p class="price"><span>100 PLN</span></p>
+        </div>
+
+    </section>
+    <footer>
+        <img src={% static "img/smyki.png" %}>
+        <p>&copy; 2018 Rhsmyki </p>
+    </footer>
+
+</body>
+
+</html>

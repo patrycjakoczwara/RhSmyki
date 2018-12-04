@@ -1,0 +1,242 @@
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Nawigacja*/
+
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    flex-basis: 25%;
+    /* flex-shrink: 1; */
+    /* flex-grow: 0; */
+}
+
+a {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+}
+
+a.other {
+    display: block;
+    background-color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'open sans', sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    transition: .2s;
+
+}
+
+
+.logo {
+    width: 16vw;
+    padding: 20px;
+}
+
+a:hover {
+    border-bottom: 2px solid #555;
+    color: black;
+}
+
+a.other:hover {
+    background-color: royalblue;
+    color: #eee;
+    border-color: royalblue;
+}
+
+
+@media (min-width: 1025px) {
+    ul {
+        flex-direction: row;
+    }
+
+    a {
+        margin: 15px;
+        /* padding: 50px 0; */
+    }
+
+}
+
+body {
+    overflow-x: hidden
+}
+
+/* HEADER */
+
+div {
+    background-color: rgba(0, 63, 114, 0.3);
+    height: 70vh;
+    background-image: url('../img/team.jpg');
+    background-size: cover;
+
+
+
+}
+
+header {
+    background-color: #999;
+    text-align: center;
+
+}
+
+
+header h2 {
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 50px;
+}
+
+header p {
+    padding: 10px 0 30px 0;
+    font-size: 30px;
+
+}
+
+article {
+    height: 50vh;
+}
+
+.about,
+.quotes {
+    margin: 90px 0;
+}
+
+.about h1,
+.quotes h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* ABOUT */
+.about h2 {
+    background-color: blue;
+    padding: 20px 0 20px 10vw;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.about img {
+    float: left;
+    padding: 0 30px;
+}
+
+.about p {
+    font-size: 22px;
+    padding-right: 40px;
+    line-height: 2;
+}
+
+.about article {
+    margin-bottom: 30px;
+    transition: 1s;
+}
+
+.about .art2,
+.about .art4 {
+    transform: translateX(-100vw);
+}
+
+.about .art3 {
+    transform: translateX(100vw);
+}
+
+.about .art2.active,
+.about .art4.active,
+.about .art3.active {
+    transform: translateX(0);
+}
+
+/* QUOTES */
+.quotes {
+
+    padding: 0 20px;
+}
+
+.quotes p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.quotes p span {
+    color: royalblue;
+}
+
+.quotes article {
+    margin-bottom: 60px;
+}
+
+.quotes img {
+    display: block;
+    width: 40vw;
+    height: 40vh;
+
+}
+
+.quotes article {
+    transform: scale(0);
+    transition: .8s linear;
+}
+
+.quotes article.active {
+    transform: scale(1);
+}
+
+/* Stopka*/
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+footer p {
+    text-align: center;
+
+}
+
+
+footer img {
+
+    display: inline-block;
+    width: 16vw;
+}

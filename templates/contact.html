@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>umów wizytę</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700|Saira:300,400&amp;subset=latin-ext" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href={% static "css/contact.css" %}>
+</head>
+
+<body>
+    <nav>
+        <ul class="sterowanie">
+
+        <li><img class="logo" src={% static "img/smyki.png" %}></li>
+        <li><a href={% url 'home' %}>Home</a></li>
+        <li><a href={% url 'about-us' %}>O nas</a></li>
+        <li><a href={% url 'join-us' %}>Współpraca</a></li>
+        <li><a href={% url 'price-list' %}>Cennik</a></li>
+        <li><a class="other" href={% url 'contact' %}>umów wizytę</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1></h1>
+    </header>
+    <section>
+        <!-- <h1>Pierwsza wizyta</h1> -->
+    </section>
+
+    <section class="contact">
+        <h1>Skontaktuj się ze mną</h1>
+        <div class="wrap clearfix">
+            <form>
+                <input type="text" placeholder="Twoje imię">
+                <input type="text" placeholder="Email">
+                <textarea placeholder="Twoja wiadomość"></textarea>
+                <button>wyślij wiadomość</button>
+            </form>
+            <div class="socials">
+                <div class="social clearfix"><img src={% static "img/contact1.png"%}><span>rhsmyki@gmail.com</span></div>
+                <div class="social clearfix"><img src={% static "img/contact2.png"%}><span>506141077</span></div>
+                <div class="social clearfix"><img src={% static "img/contact3.png"%}><span>rhsmyki</span></div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <img src={% static "img/smyki.png" %}>
+        <p>&copy; 2018 Rhsmyki </p>
+    </footer>
+
+
+
+
+
+</body>
+
+
+</html>
